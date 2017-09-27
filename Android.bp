@@ -25,6 +25,7 @@ cc_library_static {
     cflags: [
         "-O3",
         "-DUSE_MMAP",
+        "-Werror",
         "-Wno-unused-parameter",
     ],
     export_include_dirs: ["."],
@@ -49,6 +50,7 @@ cc_binary {
     static_libs: ["libbz"],
     stl: "none",
     cflags: [
+        "-Werror",
         "-Wno-unused-parameter",
     ],
     symlinks: [
